@@ -2,6 +2,7 @@
 The Odin Project Exercise
 
 ##Links
+
 -view given [asignement](https://www.theodinproject.com/lessons/node-path-javascript-weather-app#assignment)
 
 -view [the project](https://volodimeru.github.io/weather-app)
