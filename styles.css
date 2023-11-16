@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    background:linear-gradient(100deg,#22d3ee ,#34d399);
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 60vw;
+    min-width: 400px;
+    border-radius: 20px;
+    min-height: 250px;
+    max-height: 350px;
+    padding:20px;
+    margin-top: 30px;
+}
+#temperature{
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 220px;
+    color:#f0fdfa;
+    text-align: center;
+}
+.err{
+    font-weight: bold;
+    color:white;
+    margin-top: 30px;
+    text-align: center;
+
+}
+#location{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#condition{
+    margin-right: 10px;
+}
+
+#condition p,img{
+    display:inline;
+    font-size: 3rem;
+    vertical-align:middle;
+}
+
+#condition, #forecast{
+    display:inline-block;
+    height: 70px;
+ 
+}
+
+#forecast p{
+    font-size: 0.9em;
+}
+
+#forecast{
+    font-size: 0.6em;
+    vertical-align:middle;
+    padding-top: 15px;
+    font-weight: bold;
+    line-height: 0.8rem;
+}
+
+#forecast p:first-of-type{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    
+}
+.inp{
+    max-width: 240px;
+    min-width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+svg{
+    vertical-align: middle;
+    width: 21px;
+    fill: white;
+}
+input,button{
+    outline: none;
+    height: 25px;
+    vertical-align: middle;
+    padding: 1px 1px 1px 3px;
+    background: transparent;
+    border:2px solid white;
+    border-radius:4px;
+    color:white;
+}
+input[type=text]{
+   width: 200px;
+}
+input[type=text]::placeholder {
+    color: white; /* Set the desired color using hexadecimal, RGB, or other valid color values */
+}
+#loading {
+    display: none;
+    font-weight: bold;
+    color:white;
+    margin-top: 30px;
+    text-align: center;
+}
+.threedays{
+    min-width:300px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:white;
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    margin: 0 auto;
+}
+
+.threedayscont{
+text-align: center;
+}
+.threedayscont svg{
+    width: 15px;
+    margin-bottom: 3px;
+}
+.threedayscont svg:nth-of-type(2) {
+    width: 5px;
+    fill:red;
+}
+.threedayscont p:nth-child(3){
+    font-size: 0.65rem;
+    vertical-align: middle;
+}
+.threedayscont p:nth-child(4){
+    font-size: 0.65rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
