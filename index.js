@@ -22,22 +22,13 @@ async function getforecast() {
       });
       document.getElementById('loading').style.display = 'none';
     const weatherdata = await weatherresponce.json();
-
     console.log(weatherdata)
-      console.log(weatherdata.forecast.forecastday)
     if (weatherdata.current){
       const currTemp = weatherdata.current.temp_c
       const currFeels = weatherdata.current.feelslike_c
       const currHumidity = weatherdata.current.humidity
       const currentCondition = weatherdata.current.condition.text
       const iconImage = weatherdata.current.condition.icon
-    //   const forecastIcon = weatherdata.forecast.forecastday.day.condition.icon
-    //   const forecastIcons=[]
-    //   for (let i=0;i<3;i++){
-    //     ico = weatherdata.forecast.forecastday[i].day.condition.icon
-    //     forecastIcons.push(ico)
-    //   }
-    //   console.log(forecastIcons)
       const country = weatherdata.location.country
       const name = weatherdata.location.name
       const region = weatherdata.location.region
@@ -62,11 +53,8 @@ async function getforecast() {
         err.appendChild(msg)
 
     console.log(weatherdata.error.message)
-    }
-      
-    
-    
-    }catch(error){
+}
+}catch(error){
         console.log(error)
     }
 }
